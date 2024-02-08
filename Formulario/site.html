@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Usuário\Documents\Fornulário\Formulario\form\style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="section">
+        <h1>Formulário 🔥</h1>
+        <form id="form">
+            <div class="box-form">
+                <div>
+                    <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                    <span class="span-form">Seu nome deve conter 3 caracteres</span>
+                </div>
+                <div>
+                    <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
+                    <span class="span-form">Email inválido</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Digite sua senha" class="inputs required" oninput="senhaValidate()">
+                    <span class="span-form">Sua senha precisa conter 8 caracteres</span>
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirme sua senha" class="inputs required" oninput="confirmeValidate()">
+                    <span class="span-form">Senha incorreta</span>
+                </div>
+                <div>
+                    <textarea name="text" id="inputText" cols="25" rows="10" class="inputs" placeholder="Digite sua jornada na programação até aqui..."></textarea>
+                </div>
+                <p>Sexo:</p>
+                <div class="box-js">
+                    <div>
+                    <input type="radio" id="m" value="m" name="sexo">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="sexo">
+                    <label for="f">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="sexo">
+                    <label for="o">Outro</label>
+                </div>
+                </div>
+                <p>Especialidades:</p>
+                <div class="box-js">
+                    <div>
+                        <input type="checkbox" id="html" value="html" name="Html">
+                        <label for="html">Html</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css" value="css" name="Css">
+                        <label for="css">Css</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="js" value="js" name="Js">
+                        <label for="js">JavaScript</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="type" value="type" name="typejs">
+                        <label for="type">TypeScript</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="inputs">Enviar</button>
+        </form>
+    </div>
+    <script src="C:\Users\Usuário\Documents\Fornulário\Formulario\form\index.js"></script>
+</body>
+</html>
